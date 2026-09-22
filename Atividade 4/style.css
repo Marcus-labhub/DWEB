@@ -40,7 +40,7 @@ nav a:hover {
 main {
   display: flex;
   gap: 24px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 24px auto;
   padding: 0 20px;
 }
@@ -90,19 +90,7 @@ aside li {
 }
 
 
-footer {
-  background-color: #2b1f5c;
-  color: white;
-  text-align: center;
-  padding: 26px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  
-}
-
-
-@media (max-width: 700px) {
+@media (max-width: 400px) {
   main,
   article {
     flex-direction: column;
