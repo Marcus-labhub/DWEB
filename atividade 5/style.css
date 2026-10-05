@@ -1,0 +1,100 @@
+body {
+    font-family: "Segoe UI", Tahoma;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 15px;
+    min-width: 420px;
+}
+
+.card {
+    flex-basis: calc(100% / 3 - 20px);
+    text-align: center;
+    padding: 20px;
+    background-color: gray;
+    height: 200px;
+}
+
+@media (max-width: 420px) 
+{
+    h2::before  {
+    content: "cinza"
+    }
+    .card{
+        background-color: gray;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 720px)
+{
+    h2::before  {
+    content: "laranja"
+    }
+    .card{
+        background-color: orange;
+    }
+}
+@media (min-width: 721px) and (max-width: 1024px)
+{
+    h2::before  {
+    content: "rosa"
+    }
+    .card{
+        background-color: rgb(237, 38, 224);
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px)
+{
+    h2::before  {
+    content: "vermelho"
+    }
+    .card{
+        background-color: rgb(185, 55, 51);
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px)
+{
+    h2::before  {
+    content: "azul"
+    }
+    .card{
+        background-color: rgb(51, 82, 185);
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px)
+{
+    h2::before  {
+    content: "amarelo"
+    }
+    .card{
+        background-color: rgb(208, 243, 12);
+    }
+}
+
+@media (min-width: 1921px)
+{
+    h2::before  {
+    content: "verde"
+    }
+    .card{
+        background-color: rgb(31, 243, 12);
+    }
+}
+    
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-top: 10px 0;
+}
