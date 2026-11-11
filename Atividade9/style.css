@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 16px;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: #1c2530;
+ 
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("https://img.magnific.com/fotos-gratis/tabuleiro-com-inscricoes-de-formulas-e-calculos-cientificos_1150-19413.jpg?semt=ais_hybrid&w=740&q=80") center / cover no-repeat fixed;
+  background-color: #1c2530;
+}
+
+main {
+  max-width: 820px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+h1 {
+  grid-column: 1 / -1;
+  margin: 0 0 8px;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+section {
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+}
+
+.campos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+input {
+  flex: 1 1 120px;
+  min-width: 0;
+  padding: 9px 10px;
+  font: inherit;
+  border: 1px solid #b8c2cc;
+  border-radius: 8px;
+}
+
+input:focus {
+  outline: 2px solid #f59e0b;
+  border-color: transparent;
+}
+
+button {
+  padding: 9px 18px;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: #1c2530;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f59e0b;
+  color: #1c2530;
+}
+
+.resultado {
+  margin: 12px 0 0;
+  padding: 9px 12px;
+  font-weight: 600;
+  background: #fef3c7;
+  border-radius: 8px;
+}
+
+.resultado:empty {
+  display: none;
+}
+
+
+section:last-of-type {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 480px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  section:last-of-type {
+    grid-column: auto;
+  }
+}
